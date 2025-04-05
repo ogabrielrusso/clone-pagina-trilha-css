@@ -1,0 +1,220 @@
+/* Importação de reset para consistência entre navegadores */
+@import url('reset.css');
+
+/* Estilos globais */
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #33A8DB;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    margin: 0 0 16px;
+}
+
+/* Seções */
+section {
+    margin: 100px auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+/* Banner */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../img/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid #33A8DB80;
+}
+
+.banner .banner-content {
+    color: white;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.banner p {
+    font-size: 1.25rem;
+    margin: 16px 0 24px;
+}
+
+.banner .logo {
+    background-color: rgba(0, 0, 0, .2);
+    height: 260px;
+    width: 260px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.banner .logo img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.banner .banner-content button {
+    color: #31A8DD;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banner .banner-content button:hover {
+    background-color: #31A8DD;
+    color: black;
+}
+
+/* Conteúdo do curso */
+#course-content {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+#course-content .modules-list {
+    margin: 24px 0;
+}
+
+#course-content .modules-list .module {
+    color: white;
+    width: 90%;
+    max-width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#course-content .modules-list .module:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#course-content .modules-list .module span {
+    color: #33A8DB;
+    font-weight: bold;
+}
+
+/* Transforme o mundo */
+#transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url("../img/woman-code.png");
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 200px;
+    text-align: center;
+}
+
+#transform-world p {
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    max-width: 250px;
+    margin: auto;
+    text-shadow: 3px 2px #33A8DB;
+}
+
+/* Desafios profissionais */
+#professional-challenges {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+#professional-challenges img {
+    margin: 32px 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+}
+
+footer .dio-logo {
+    width: 300px;
+    max-width: 100%;
+}
+
+footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1472B7;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .banner .banner-content {
+        width: 100%;
+    }
+
+    #transform-world {
+        padding: 100px 20px;
+    }
+
+    #course-content,
+    #professional-challenges {
+        width: 100%;
+    }
+}
